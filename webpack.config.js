@@ -42,17 +42,15 @@ module.exports = {
     extensions: ['.js'],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'main page',
-      filename: 'index.html',
-      template: 'view/index.hbs'
-    }),
-    new HtmlWebpackPlugin({
-      title: 'about page',
-      filename: 'about.html',
-      template: 'view/about.hbs'
+  ].concat(
+    ["index", "about"].map(page => {
+      return new HtmlWebpackPlugin({
+        title: `${page} page`,
+        filename: `${page}.html`,
+        template: `view/${page}.hbs`
+      })
     })
-  ],
+  ),
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
