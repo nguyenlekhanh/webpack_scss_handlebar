@@ -46,5 +46,14 @@ module.exports = {
     filename: 'index.html',
     template: 'view/index.hbs'
   })],
+  devtool: "inline-source-map",
+  devServer: {
+    static: "./dist",
+    hot: true
+  },
+  optimization: {
+    runtimeChunk: "single",
+  },
+
   mode: "development"
 }
