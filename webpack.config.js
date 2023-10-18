@@ -1,5 +1,6 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -31,11 +32,19 @@ module.exports = {
             plugins: ['@babel/plugin-proposal-class-properties']
           }
         }
+      },
+      {
+        test: /\.hbs$/, loader: "handlebars-loader"
       }
     ]
   },
   resolve: {
     extensions: ['.js'],
   },
+  plugins: [new HtmlWebpackPlugin({
+    title: 'main page',
+    filename: 'index.html',
+    template: 'view/index.hbs'
+  })],
   mode: "development"
 }
