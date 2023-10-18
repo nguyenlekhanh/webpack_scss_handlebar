@@ -42,9 +42,11 @@ module.exports = {
     extensions: ['.js'],
   },
   plugins: [
+    new MiniCssExtractPlugin(),
   ].concat(
-    ["index", "about"].map(page => {
+    ["index", "about", "contact-us"].map(page => {
       return new HtmlWebpackPlugin({
+        inject: "body",
         title: `${page} page`,
         filename: `${page}.html`,
         template: `view/${page}.hbs`
