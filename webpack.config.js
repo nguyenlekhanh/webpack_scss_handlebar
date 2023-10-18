@@ -41,11 +41,18 @@ module.exports = {
   resolve: {
     extensions: ['.js'],
   },
-  plugins: [new HtmlWebpackPlugin({
-    title: 'main page',
-    filename: 'index.html',
-    template: 'view/index.hbs'
-  })],
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'main page',
+      filename: 'index.html',
+      template: 'view/index.hbs'
+    }),
+    new HtmlWebpackPlugin({
+      title: 'about page',
+      filename: 'about.html',
+      template: 'view/about.hbs'
+    })
+  ],
   devtool: "inline-source-map",
   devServer: {
     static: "./dist",
