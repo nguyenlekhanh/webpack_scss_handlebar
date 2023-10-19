@@ -1,4 +1,31 @@
 {{>header}}
-    <h1>Hello from handlebar</h1>
-    Subtitle dsfsdf
+<div class="information text-center">
+    <div class="information__title">
+        <h1>We are Computer Scientists</h1>
+    </div>
+    <div class="information__body">
+        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form
+        of a document or a typeface without relying on meaningful content.
+    </div>
+</div>
+
+<div class="product-group">
+    <div class="text-center">Men Collection</div>
+    {{>product_scroll}}
+    <div class="text-center">
+        <button>View More Product</button>
+    </div>
+</div>
+
+<div class="product-group">
+    <div class="text-center">Women Collection</div>
+    {{>product_scroll}}
+    <div class="text-center">
+        <button>View More Product</button>
+    </div>
+</div>
+
+<div class="image-highlight">
+    {{>image_highlight}}
+</div>
 {{>footer}}

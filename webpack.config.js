@@ -83,6 +83,9 @@ module.exports = {
   },
   resolve: {
     extensions: ['.js'],
+    alias: {
+      jquery: "jquery/src/jquery"
+    }
   },
   plugins: [
     new MiniCssExtractPlugin({
@@ -93,7 +96,7 @@ module.exports = {
         '**/*',
         path.join(process.cwd(), 'build/**/*')
       ]
-    }),
+    })
   ].concat(
     ["index", "about", "contact-us"].map(page => {
       return new HtmlWebpackPlugin({

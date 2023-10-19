@@ -8,28 +8,24 @@
 <body>
   <header>
     {{!-- header --}}
-    <section class="header">
-      <div class="header__group d-flex justify-content-between">
-        <div class="header__group__menu">
-          <div class="d-flex">
-            <div>
-              <div class="bx bx-menu" id="menu-icon"></div>
-            </div>
-            <div>
-              <div class="bx bx-search" id="menu-icon"></div>
-            </div>
-          </div>
+    <section class="header px-3 py-2">
+      <div class="header__group d-flex justify-content-between align-items-center">
+        <div class="header__group__menu d-flex d-lg-none">
+          <div class="bx bx-menu" id="menu-icon"></div>
+          <div class="bx bx-search" id="menu-icon"></div>
         </div>
         <div class="header__group__logo">
           <img src="./static/logo.png" alt="logo" />
         </div>
-        <div class="header__group__logo">
-          user cart [love, search]
+        {{>header_menu}}
+        <div class="header__group__logo d-flex">
+          <div class="bx bx-user" id="menu-icon"></div>
+          <div class="bx bx-cart" id="menu-icon"></div>
         </div>
       </div>
     </section>
   </header>
   {{!-- banner --}}
-    <section class="banner">
-
-    </section>
+  <section class="banner">
+    <img src="./static/banner.png" alt="banner" class="img-fluid"/>
+  </section>
