@@ -1,0 +1,36 @@
+.header {
+  .header__group__icon {
+    gap: 0.5rem;
+
+    .icon {
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .login-menu {
+      background-color: white;
+      width: 250px;
+      right: 0;
+      top: 25px;
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+
+      .login-menu-btn {
+        &:hover {
+          background-color: #262525;
+        }
+        
+        background-color: #EF5B5B;
+        width: 85%;
+        border-radius: 0px;
+        color: white;
+        transition: all .3s ease-in-out;  
+      }
+      
+
+      .register-box {
+        gap: 0.2rem
+      }
+    }
+  }
+}
