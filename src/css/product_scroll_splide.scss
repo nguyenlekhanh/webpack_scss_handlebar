@@ -1,0 +1,18 @@
+@import "~bootstrap/scss/bootstrap";
+
+
+@include media-breakpoint-up(xl) { 
+    .splide {
+        margin-left: 7rem!important;
+        margin-right: 7rem !important;
+
+        .splide__list {
+            border: none;
+            // width: 1200px;
+
+            // .splide__slide {
+            //     max-width: 150px;
+            // }
+        }
+    }
+}

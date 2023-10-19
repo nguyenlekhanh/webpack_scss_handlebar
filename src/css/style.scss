@@ -4,3 +4,10 @@
 @import './header.scss';
 @import './header_menu.scss';
 @import './khanh_popover.scss';
+@import '@splidejs/splide/css';
+@import './product_scroll_splide.scss';
+
+
+body {
+  font-family: "Montserrat";
+}
