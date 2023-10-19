@@ -1,0 +1,38 @@
+$color-light-black: #FAFAFA;
+
+.footer-sign-up  {
+    background-color: #FAFAFA;
+
+    .sign-up-box {
+        .sign-up-box__input:focus {
+            border: 0;
+            border-color: #c4c4c4;
+        }
+        .sign-up-box__input:visited {
+            border: 0;
+            border-color: #c4c4c4;
+        }
+
+        .sign-up-box__input {
+            &:focus {
+                outline: none;
+            }
+
+            border: 0;
+            background-color: white;
+            width: 22rem;
+            padding: 0.7rem;
+            margin: 0;
+        }
+        
+        .sign-up-box__button {
+            background-color: black;
+            width: 9rem;
+            padding: 0.7rem;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 0.1rem;
+            margin-left: -5px;
+        }
+    }
+}
