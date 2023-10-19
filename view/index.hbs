@@ -1,11 +1,11 @@
 {{>header}}
-<div class="information text-center">
+<div class="information text-center my-5">
     <div class="information__title">
-        <h1>We are Computer Scientists</h1>
+        <h1 class="fw-bold">We are Computer Scientists</h1>
     </div>
-    <div class="information__body">
-        In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form
-        of a document or a typeface without relying on meaningful content.
+    <div class="information__body mt-3 fw-bolder">
+        In publishing and graphic design, Lorem ipsum  <br />is a placeholdertext commonly used to demonstrate the visual form
+        of a document or a typeface without.
     </div>
 </div>
 
@@ -17,17 +17,26 @@
     </div>
 </div> --}}
 
-<div class="product-group">
-    <div class="text-center">Men Collection</div>
-    {{>product_scroll_splide}}
-    <div class="text-center">
-        <button>View More Product</button>
+<div class="product-group my-5">
+    <div class="text-center  mb-4 fw-bolder fs-4 text-uppercase">Men Collection</div>
+    {{>product_scroll_splide_men}}
+    <div class="text-center my-4">
+        <a href="#" class="btn btn-danger rounded-0 text-uppercase px-4 letter-spacing-1">View More Product</a>
     </div>
 </div>
 
+<div class="product-group my-5">
+    <div class="text-center  mb-4 fw-bolder fs-4 text-uppercase">Women Collection</div>
+    {{>product_scroll_splide}}
+    <div class="text-center my-4">
+        <a href="#" class="btn btn-danger rounded-0 text-uppercase px-4 letter-spacing-1">View More Product</a>
+    </div>
+</div>
 
 <div class="image-highlight">
-    image_highlight
-    {{>image_highlight}}
+    <div class="image-highlight__title letter-spacing-1">
+        HASHTAG FOR OUR PRODUCT
+    </div>
+    {{>product_scroll_splide_highlight}}
 </div>
 {{>footer}}

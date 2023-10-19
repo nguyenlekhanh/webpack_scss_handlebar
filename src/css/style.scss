@@ -14,5 +14,21 @@
 
 
 body {
-  font-family: "Montserrat";
+  font-family: Montserrat, sans-serif;
+}
+
+.letter-spacing-1 {
+  letter-spacing: 0.1rem;
+}
+
+.image-highlight {
+  .image-highlight__title {
+    height: 3.5rem;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-spacing: 2px;
+  }
 }
