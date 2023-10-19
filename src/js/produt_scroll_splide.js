@@ -5,7 +5,6 @@ import Splide from '@splidejs/splide';
 const productScroll = {
   init_product_scroll: function() {
     let $productScroll = $(".splide:has(> :gt(4))");
-    console.log($productScroll);
   }
 }
 

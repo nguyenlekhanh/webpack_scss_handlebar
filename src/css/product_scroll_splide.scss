@@ -1,18 +1,9 @@
 @import "~bootstrap/scss/bootstrap";
 
+.splide {
+    max-width: 100%;
 
-@include media-breakpoint-up(xl) { 
-    .splide {
-        margin-left: 7rem!important;
-        margin-right: 7rem !important;
-
-        .splide__list {
-            border: none;
-            // width: 1200px;
-
-            // .splide__slide {
-            //     max-width: 150px;
-            // }
-        }
+    .splide__list {
+        border: none;
     }
 }
