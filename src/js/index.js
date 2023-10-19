@@ -10,6 +10,7 @@ import './khanh_popover.js'
 import '../../view/index.hbs';
 import logo from '../imgs/logo.png'
 import banner from '../imgs/banner.png'
+import banner1 from '../imgs/banner1.png'
 import product from '../imgs/product1.jpg'
 
 
